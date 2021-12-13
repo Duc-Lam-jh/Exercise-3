@@ -189,6 +189,7 @@
 	.carousel .title {
 		font-size: 20px;
 		padding: 10px 0 10px 150px;
+    height: 75px;
 
 		display: flex;
 		align-items: center;

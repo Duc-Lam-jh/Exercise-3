@@ -2,6 +2,24 @@ p{
   font-size: 13px;
 }
 
+.decor-1{
+  display: block;
+  position: absolute;
+  top: 1800px;
+  left: 0px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decor-2{
+  display: block;
+  position: absolute;
+  top: 650px;
+  right: 0px;
+  pointer-events: none;
+  z-index: 0;
+}
+
 #paint-your-pixture{
   height: 100vh;
 }
