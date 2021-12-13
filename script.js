@@ -28,16 +28,22 @@ function SetCarouselControls(carousel){
   if(moving.offsetWidth > carousel.offsetWidth){
     difference = moving.offsetWidth - carousel.offsetWidth;
     const right = parseInt(moving.style.right);
-    if(right < 50){
-      //show left arrow
-      leftArrow.style.display = 'block';
-      rightArrow.style.display = 'none';
-      
-    }
-    else if(right >= 50){
+    const left = parseInt(moving.style.left);
+    if(right >= 50){
       //show right arrow
       leftArrow.style.display = 'none';
       rightArrow.style.display = 'block';
+    }
+    if(right < 50 && right >= -(moving.offsetWidth - carousel.offsetWidth)){
+      //show both arrows
+      leftArrow.style.display = 'block';
+      rightArrow.style.display = 'block';
+      
+    }
+    else if(right < -(moving.offsetWidth - carousel.offsetWidth)){
+      //show left arrow
+      leftArrow.style.display = 'block';
+      rightArrow.style.display = 'none';
     }
   }
   else{
