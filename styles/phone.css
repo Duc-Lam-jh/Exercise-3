@@ -113,6 +113,7 @@
   align-items: center;
 
   transform: rotate(-90deg);
+  width: 100%;
 }
 
 .sidebar .content .arrow-button{
@@ -149,16 +150,9 @@
   display: none;
 }
 
-/* #its-your-passion .title-img{
-  position: relative;
-  top: 50%;
-  width: 300px;
-  transform: translateY(-50%);
-} */
-
 #its-your-passion .img-wrapper{
   width: 100%;
-  margin-block-start: 70%;
+  margin-block-start: 60%;
 
   display: flex;
   justify-content: center;
@@ -307,4 +301,10 @@
 
 .col-3{
   grid-column: 3/4;
+}
+
+@media screen and (max-height: 850px){
+  #its-your-passion .img-wrapper{
+    margin-block-start: 40%;
+  }
 }

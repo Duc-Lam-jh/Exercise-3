@@ -69,6 +69,7 @@
   grid-template-rows: 200px 200px;
 
 	background: white;
+  border: 0px;
 }
 
 .moving-container .card .img{
